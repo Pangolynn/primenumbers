@@ -1,4 +1,5 @@
 #Samantha Holloway 10/2014
+#Editted 11/05/2014 Joseph Pannizzo
 #OOD
 #Program will output all prime numbers up to a given input
 
@@ -29,11 +30,13 @@ def primeloop(number):
 
 
 #----------Program Start--------------
-
-#number is user input
-number = int(input("Enter a number: "))
+#Added exception handling. If input isn't a number program will loop.
+while True:
+	try:
+		#number is user input
+		number = int(input("Enter a number: "))
+		break
+	except NameError:
+		print("That's not a valid number. Please use a whole number.")
+		
 primeloop(number)
-
-
-
-
