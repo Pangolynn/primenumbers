@@ -36,7 +36,7 @@ while True:
 		#number is user input
 		number = int(input("Enter a number: "))
 		break
-	except NameError:
+	except Exception:
 		print("That's not a valid number. Please use a whole number.")
 		
 primeloop(number)
